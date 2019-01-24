@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Client.ClientWindow">
+   <children>
+      <ScrollPane layoutX="7.0" layoutY="6.0" prefHeight="200.0" prefWidth="587.0">
+        <content>
+          <AnchorPane fx:id="textArea" minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="569.0" />
+        </content>
+      </ScrollPane>
+      <TextField fx:id="msgInput" layoutX="81.0" layoutY="214.0" prefHeight="27.0" prefWidth="368.0" promptText="Enter message" />
+      <Button fx:id="btnSend" layoutX="465.0" layoutY="214.0" mnemonicParsing="false" onAction="#printToConsole" text="Send" />
+   </children>
+</AnchorPane>
